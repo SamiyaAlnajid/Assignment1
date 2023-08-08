@@ -1,0 +1,31 @@
+
+<h1 style="text-align: center;">Students Marks</h1>
+<br>
+
+<table>
+  <thead>
+    <tr> 
+      <th>NAME</th> 
+      <th>EMAIL</th>
+      <th>MARKS (out of 100)</th>
+      <th>PASS/ FAIL</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- [hidden]="student.Mark < 50" -->
+    
+    <tr *ngFor="let student of students; let i = index" [ngStyle]="alternateRowStyle(i)" >
+      <td>{{ student.name }}</td>
+      <td>{{ student.email }}</td>
+      <td [ngClass]="getMarkColor(student.Mark)">{{ student.Mark }}</td>
+
+        <td>
+          <span *ngIf="student.Mark > 50" class="badge-pass">PASS</span>
+          <span *ngIf="student.Mark <= 50" class="badge-fail">FAIL</span>
+        </td>
+      </tr>
+
+  </tbody>
+</table>
+

@@ -1,0 +1,28 @@
+<!-- Using <h1> tag -->
+  <br>
+  <h3><span>{{ message }}</span></h3>
+
+  <div class="card cards card-2 text-center" style="width: 30rem; height: 35rem;">
+    <div class="card-body">
+      <img class="card-img-top" src="https://img.freepik.com/free-vector/work-home-concept-flat-design_1308-94919.jpg?w=900&t=st=1691312725~exp=1691313325~hmac=e6ac11044875539d7c365962b438319f396330626488e1b4bf42e15faa9211d1" alt="Card image cap">
+     <br><br>
+      <h3 class="card-title">Student <span style="color: chocolate;">{{Details}}</span></h3>
+      <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+      <p>Enter Student Name:</p>
+
+      <input type="text" (input)="onInputChange($event)" placeholder="Enter Student Name">
+      <div>{{ inputValue }}</div> <br>
+
+      <!-- <input type="text" (input)="onInputChange($event)" placeholder="Enter Student ID">
+      <div>{{ inputValues }}</div> -->
+
+<br>
+      <a href="#" class="btn btn-primary" routerLink="student">Go to student marks</a>
+    </div>
+  </div>
+
+
+
+
+
+

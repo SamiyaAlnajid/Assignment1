@@ -1,0 +1,30 @@
+.style {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    display: flex;
+    background: rgb(211, 224, 231);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.style svg {
+  width: 81px;
+  height: 43px;
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
